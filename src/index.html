@@ -10,12 +10,73 @@
   <body>
     <main class="main-block">
       <h1 class="visually-hidden">Рекламный блок</h1>
-      <ul class="ads-list">
-        <li class="ads-list__item">
-          <a class="ads-list__link" href="#">
-            <img class="ads-list__image" alt="Изображение дома" src="">
-            <h2 class="ads-list__header">Апартаменты от 7,2 млн</h2>
-            <p class="ads-list__text">Престижные апартаменты Матч Поинт на Кутузовском в шаге от Парка Победы и Филевского парка</p>
+      <ul class="advs-list">
+        <li class="advs-list__item">
+          <a class="advs-list__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/apartments-desktop@1x.webp 1x, img/apartments-desktop@2x.webp 2x, img/apartments-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/apartments-tablet@1x.webp 1x, img/apartments-tablet@2x.webp 2x, img/apartments-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/apartments-mobile@1x.webp 1x, img/apartments-mobile@2x.webp 2x, img/apartments-mobile@3x.webp 3x">
+
+              <source media="(min-width: 1440px)" srcset="img/apartments-desktop@1x.jpg 1x, img/apartments-desktop@2x.jpg 2x, img/apartments-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/apartments-tablet@1x.jpg 1x, img/apartments-tablet@2x.jpg 2x, img/apartments-tablet@3x.jpg 3x">
+              <img class="advs-list__image" src="img/apartments-mobile@1x.jpg" srcset="img/apartments-mobile@2x.jpg 2x, img/apartments-mobile@3x.jpg 3x" alt="Изображение дома" width="100" height="100">
+            </picture>
+            <div class="advs-list__text-wrap">
+              <h2 class="advs-list__header">Апартаменты от 7,2 млн</h2>
+              <p class="advs-list__text">Престижные апартаменты Матч Поинт на Кутузовском в шаге от Парка Победы и Филевского парка</p>
+            </div>
+          </a>
+        </li>
+        <li class="advs-list__item">
+          <a class="advs-list__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/shark-desktop@1x.webp 1x, img/shark-desktop@2x.webp 2x, img/shark-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/shark-tablet@1x.webp 1x, img/shark-tablet@2x.webp 2x, img/shark-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/shark-mobile@1x.webp 1x, img/shark-mobile@2x.webp 2x, img/shark-mobile@3x.webp 3x">
+
+              <source media="(min-width: 1440px)" srcset="img/shark-desktop@1x.jpg 1x, img/shark-desktop@2x.jpg 2x, img/shark-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/shark-tablet@1x.jpg 1x, img/shark-tablet@2x.jpg 2x, img/shark-tablet@3x.jpg 3x">
+              <img class="advs-list__image" src="img/shark-mobile@1x.jpg" srcset="img/shark-mobile@2x.jpg 2x, img/shark-mobile@3x.jpg 3x" alt="Изображение игры Викинги" width="100" height="100">
+            </picture>
+            <div class="advs-list__text-wrap">
+              <h2 class="advs-list__header">Стань вождём клана!</h2>
+              <p class="advs-list__text">Докажи всем, что ты сможешь их привести к победе в бою за королевство</p>
+            </div>
+          </a>
+        </li>
+        <li class="advs-list__item">
+          <a class="advs-list__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/lopez-desktop@1x.webp 1x, img/lopez-desktop@2x.webp 2x, img/lopez-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/lopez-tablet@1x.webp 1x, img/lopez-tablet@2x.webp 2x, img/lopez-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/lopez-mobile@1x.webp 1x, img/lopez-mobile@2x.webp 2x, img/lopez-mobile@3x.webp 3x">
+
+              <source media="(min-width: 1440px)" srcset="img/lopez-desktop@1x.jpg 1x, img/lopez-desktop@2x.jpg 2x, img/lopez-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/lopez-tablet@1x.jpg 1x, img/lopez-tablet@2x.jpg 2x, img/lopez-tablet@3x.jpg 3x">
+              <img class="advs-list__image" src="img/lopez-mobile@1x.jpg" srcset="img/lopez-mobile@2x.jpg 2x, img/lopez-mobile@3x.jpg 3x" alt="Изображение Дженнифер Лопес" width="100" height="100">
+            </picture>
+            <div class="advs-list__text-wrap">
+              <h2 class="advs-list__header">В отличной форме: 49&#8209;летняя Дженнифер Лопес снялась для глянца в купальнике</h2>
+              <p class="advs-list__text">Певица не устает удивлять поклонников [фото]</p>
+            </div>
+          </a>
+        </li>
+        <li class="advs-list__item">
+          <a class="advs-list__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/moscow-desktop@1x.webp 1x, img/moscow-desktop@2x.webp 2x, img/moscow-desktop@3x.webp 3x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/moscow-tablet@1x.webp 1x, img/moscow-tablet@2x.webp 2x, img/moscow-tablet@3x.webp 3x">
+              <source type="image/webp" srcset="img/moscow-mobile@1x.webp 1x, img/moscow-mobile@2x.webp 2x, img/moscow-mobile@3x.webp 3x">
+
+              <source media="(min-width: 1440px)" srcset="img/moscow-desktop@1x.jpg 1x, img/moscow-desktop@2x.jpg 2x, img/moscow-desktop@3x.jpg 3x">
+              <source media="(min-width: 768px)" srcset="img/moscow-tablet@1x.jpg 1x, img/moscow-tablet@2x.jpg 2x, img/moscow-tablet@3x.jpg 3x">
+              <img class="advs-list__image" src="img/moscow-mobile@1x.jpg" srcset="img/moscow-mobile@2x.jpg 2x, img/moscow-mobile@3x.jpg 3x" alt="Изображение девушки" width="100" height="100">
+            </picture>
+            <div class="advs-list__text-wrap">
+              <h2 class="advs-list__header">Москвичка, взявшая в попутчики маньяка, могла быть убита</h2>
+              <p class="advs-list__text">29-летнюю директора Burger King ищет полиция и волонтеры, но в ее исчезновении есть</p>
+            </div>
           </a>
         </li>
       </ul>

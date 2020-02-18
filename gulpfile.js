@@ -8,6 +8,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const server = require("browser-sync").create();
 const del = require("del");
+const webp = require("gulp-webp");
 
 gulp.task("css", () => {
   return gulp.src("src/sass/style.scss")
@@ -38,11 +39,17 @@ gulp.task("server", () => {
   gulp.watch(("src/*.html"), gulp.series("copy", "refresh"));
 });
 
+gulp.task("webp", function () {
+  return gulp.src("src/img/*.jpg")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("src/img"));
+});
+
 gulp.task("copy", () => {
   return gulp.src([
     "src/img/**",
     "src/*.html",
-    "src/*.js",
+    "src/js/*.js",
     "src/css/*.css"
   ], {
     base: "src"

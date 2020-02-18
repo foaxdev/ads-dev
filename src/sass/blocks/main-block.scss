@@ -1,0 +1,15 @@
+.main-block {
+  padding: 25px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-block {
+    padding: 100px 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-block {
+    padding: 100px 140px;
+  }
+}
